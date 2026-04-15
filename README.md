@@ -84,7 +84,9 @@ The workflow automatically runs all test cases for Tasks 1, 2, and 3 on supporte
 
 ## Binary / Execution Note
 
-A PyInstaller-built executable is included in the repository to satisfy the binary deliverable.
+A PyInstaller-built binary is provided here:
+
+[Download Binary](https://drive.google.com/file/d/1_RgS8bS-oNK8pmQRceNkRE8xC7JFYmH0/view?usp=drive_link)
 
 Because this project depends on PyTorch and Transformers, the frozen executable may encounter Windows DLL initialization issues on some systems. For reliable execution in the TA’s Python virtual environment, use:
 
