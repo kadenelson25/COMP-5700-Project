@@ -1,0 +1,53 @@
+added capabilities,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+capabilities assigned,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+container optimized os,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+fargate,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+hostname override,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+protect kernel defaults,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+root containers,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+security context,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+system masters group,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+client ca file,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.3 Ensure that a Client CA File is Configured (Manual)
+client ca file,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.3 Ensure that a Client CA File is Configured (Automated)
+cluster-admin role,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+cluster-admin role,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.1 Ensure that the cluster-admin role is only used where required (Automated)
+control plane endpoint,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+control plane endpoint,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,5.4.1 Restrict Access to the Control Plane Endpoint (Automated)
+create pods,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.4 Minimize access to create pods (Manual)
+create pods,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.4 Minimize access to create pods (Automated)
+dedicated eks service accounts,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+dedicated eks service accounts,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,5.2.1 Prefer using dedicated EKS Service Accounts (Automated)
+default service accounts,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.5 Ensure that default service accounts are not actively used. (Manual)
+default service accounts,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.5 Ensure that default service accounts are not actively used. (Automated)
+event record qps,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+event record qps,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.7 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+iam authenticator,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+iam authenticator,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes or Upgrade to AWS CLI v1.16.156 or greater (Manual)
+iptables util chains,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+iptables util chains,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.6 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+kubeconfig file,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual)
+kubeconfig file,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+kubeconfig file,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Automated)
+kubeconfig file,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+kubelet configuration file,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual)
+kubelet configuration file,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Manual)
+kubelet configuration file,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Automated)
+kubelet configuration file,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Automated)
+namespaces,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+namespaces,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.5.1 Create administrative boundaries between resources using namespaces (Manual)
+network policies,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+network policies,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.3.2 Ensure that all Namespaces have Network Policies defined (Automated)
+read-only-port,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.4 Ensure that the --read-only-port is disabled (Manual)
+read-only-port,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.4 Ensure that the --read-only-port is disabled (Automated)
+roles and clusterroles,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+roles and clusterroles,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.3 Minimize wildcard use in Roles and ClusterRoles (Automated)
+rotate certificates,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.10 Ensure that the --rotate-certificates argument is not present or is set to true (Manual)
+rotate certificates,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.8 Ensure that the --rotate-certificates argument is not present or is set to true (Automated)
+rotate kubelet server certificate,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+rotate kubelet server certificate,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,3.2.9 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+secrets,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.2 Minimize access to secrets (Manual)
+secrets,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+secrets,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.2 Minimize access to secrets (Automated)
+secrets,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.4.1 Prefer using secrets as files over secrets as environment variables (Automated)
+service account tokens,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+service account tokens,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Automated)

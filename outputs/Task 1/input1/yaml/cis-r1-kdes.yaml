@@ -1,0 +1,175 @@
+element1:
+  name: kubeconfig file
+  requirements:
+  - 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+    (Manual)
+  - 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+element2:
+  name: kubelet configuration file
+  requirements:
+  - 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or
+    more restrictive (Manual)
+  - 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root
+    (Manual)
+element3:
+  name: anonymous auth
+  requirements:
+  - 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+element4:
+  name: authorization mode
+  requirements:
+  - 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow
+    (Automated)
+element5:
+  name: client ca file
+  requirements:
+  - 3.2.3 Ensure that a Client CA File is Configured (Manual)
+element6:
+  name: read-only-port
+  requirements:
+  - 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+element7:
+  name: streaming connection idle timeout
+  requirements:
+  - 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set
+    to 0 (Automated)
+element8:
+  name: protect kernel defaults
+  requirements:
+  - 3.2.6 Ensure that the --protect-kernel-defaults argument is set to true (Automated)
+element9:
+  name: iptables util chains
+  requirements:
+  - 3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+element10:
+  name: hostname override
+  requirements:
+  - 3.2.8 Ensure that the --hostname-override argument is not set (Manual)
+element11:
+  name: event record qps
+  requirements:
+  - 3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures
+    appropriate event capture (Automated)
+element12:
+  name: rotate certificates
+  requirements:
+  - 3.2.10 Ensure that the --rotate-certificates argument is not present or is set
+    to true (Manual)
+element13:
+  name: rotate kubelet server certificate
+  requirements:
+  - 3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true
+    (Automated)
+element14:
+  name: container optimized os
+  requirements:
+  - 3.3.1 Prefer using a container-optimized OS when possible (Manual)
+element15:
+  name: cluster-admin role
+  requirements:
+  - 4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+element16:
+  name: secrets
+  requirements:
+  - 4.1.2 Minimize access to secrets (Manual)
+  - 4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+element17:
+  name: roles and clusterroles
+  requirements:
+  - 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+element18:
+  name: create pods
+  requirements:
+  - 4.1.4 Minimize access to create pods (Manual)
+element19:
+  name: default service accounts
+  requirements:
+  - 4.1.5 Ensure that default service accounts are not actively used. (Manual)
+element20:
+  name: service account tokens
+  requirements:
+  - 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+element21:
+  name: system masters group
+  requirements:
+  - 4.1.7 Avoid use of system:masters group (Manual)
+element22:
+  name: privileged containers
+  requirements:
+  - 4.2.1 Minimize the admission of privileged containers (Automated)
+element23:
+  name: host process id namespace
+  requirements:
+  - 4.2.2 Minimize the admission of containers wishing to share the host process ID
+    namespace (Automated)
+element24:
+  name: host ipc namespace
+  requirements:
+  - 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace
+    (Automated)
+element25:
+  name: host network namespace
+  requirements:
+  - 4.2.4 Minimize the admission of containers wishing to share the host network namespace
+    (Automated)
+element26:
+  name: allowprivilegeescalation
+  requirements:
+  - 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+element27:
+  name: root containers
+  requirements:
+  - 4.2.6 Minimize the admission of root containers (Automated)
+element28:
+  name: added capabilities
+  requirements:
+  - 4.2.7 Minimize the admission of containers with added capabilities (Manual)
+element29:
+  name: capabilities assigned
+  requirements:
+  - 4.2.8 Minimize the admission of containers with capabilities assigned (Automated)
+element30:
+  name: network policies
+  requirements:
+  - 4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+element31:
+  name: external secret storage
+  requirements:
+  - 4.4.2 Consider external secret storage (Manual)
+element32:
+  name: namespaces
+  requirements:
+  - 4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+element33:
+  name: security context
+  requirements:
+  - 4.6.2 Apply Security Context to Your Pods and Containers (Manual)
+element34:
+  name: amazon ecr access
+  requirements:
+  - 5.1.2 Minimize user access to Amazon ECR (Manual)
+  - 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+element35:
+  name: container registries
+  requirements:
+  - 5.1.4 Minimize Container Registries to only those approved (Manual)
+element36:
+  name: dedicated eks service accounts
+  requirements:
+  - 5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+element37:
+  name: control plane endpoint
+  requirements:
+  - 5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+element38:
+  name: encrypt traffic to https
+  requirements:
+  - 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+element39:
+  name: iam authenticator
+  requirements:
+  - 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+element40:
+  name: fargate
+  requirements:
+  - 5.6.1 Consider Fargate for running untrusted workloads (Manual)

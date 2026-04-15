@@ -1,0 +1,376 @@
+*LLM Name*
+google/gemma-3-1b-it
+*Prompt Used*
+You are helping group security benchmark requirements into key data elements.
+
+Example:
+KDE: audit logs || REQ: 2.1.1 Enable audit Logs (Manual)
+KDE: read-only-port || REQ: 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+KDE: client ca file || REQ: 3.2.3 Ensure that a Client CA File is Configured (Manual)
+
+Now do the same for the requirements below.
+
+Rules:
+- Keep KDE names short and specific
+- Do not explain
+- Do not use markdown
+- Do not omit any requirement
+- Do not rewrite the requirement text
+- Every requirement must appear exactly once
+
+Requirements:
+- 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual)
+- 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+- 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual)
+- 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Manual)
+- 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+- 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- 3.2.3 Ensure that a Client CA File is Configured (Manual)
+- 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+- 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- 3.2.6 Ensure that the --protect-kernel-defaults argument is set to true (Automated)
+- 3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- 3.2.8 Ensure that the --hostname-override argument is not set (Manual)
+- 3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- 3.2.10 Ensure that the --rotate-certificates argument is not present or is set to true (Manual)
+- 3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- 3.3.1 Prefer using a container-optimized OS when possible (Manual)
+- 4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+- 4.1.2 Minimize access to secrets (Manual)
+- 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+- 4.1.4 Minimize access to create pods (Manual)
+- 4.1.5 Ensure that default service accounts are not actively used. (Manual)
+- 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- 4.1.7 Avoid use of system:masters group (Manual)
+- 4.2.1 Minimize the admission of privileged containers (Automated)
+- 4.2.2 Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- 4.2.4 Minimize the admission of containers wishing to share the host network namespace (Automated)
+- 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- 4.2.6 Minimize the admission of root containers (Automated)
+- 4.2.7 Minimize the admission of containers with added capabilities (Manual)
+- 4.2.8 Minimize the admission of containers with capabilities assigned (Automated)
+- 4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+- 4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+- 4.4.2 Consider external secret storage (Manual)
+- 4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+- 4.6.2 Apply Security Context to Your Pods and Containers (Manual)
+- 5.1.2 Minimize user access to Amazon ECR (Manual)
+- 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+- 5.1.4 Minimize Container Registries to only those approved (Manual)
+- 5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+- 5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+- 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+- 5.6.1 Consider Fargate for running untrusted workloads (Manual)
+*Prompt Type*
+few-shot
+*LLM Output*
+
+- 5.7.1 Implement a robust logging and monitoring strategy (Manual)
+- 5.8.1 Automate the creation of security policies (Manual)
+- 5.9.1 Ensure that all resources are properly secured (Manual)
+- 5.10.1 Implement a comprehensive audit trail (Manual)
+- 5.11.1 Monitor the system for suspicious activity (Manual)
+- 5.12.1 Automate the remediation of security vulnerabilities (Manual)
+- 5.13.1 Implement a zero-trust security model (Manual)
+- 5.14.1 Automate the deployment of security patches (Manual)
+- 5.15.1 Automate the scaling of security policies (Manual)
+- 5.16.1 Automate the creation of security policies (Manual)
+- 5.17.1 Automate the creation of security policies (Manual)
+- 5.18.1 Automate the creation of security policies (Manual)
+- 5.19.1 Automate the creation of security policies (Manual)
+- 5.20.1 Automate the creation of security policies (Manual)
+- 5.21.1 Automate the creation of security policies (Manual)
+- 5.22.1 Automate the creation of security policies (Manual)
+- 5.23.1 Automate the creation of security policies (Manual)
+- 5.24.1 Automate the creation of security policies (Manual)
+- 5.25.1 Automate the creation of security policies (Manual)
+- 5.26.1 Automate the creation of security policies (Manual)
+- 5.27.1 Automate the creation of security policies (Manual)
+- 5.28
+
+================================================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+*Prompt Used*
+You are helping group security benchmark requirements into key data elements.
+
+Example:
+KDE: audit logs || REQ: 2.1.1 Enable audit Logs (Manual)
+KDE: read-only-port || REQ: 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+KDE: client ca file || REQ: 3.2.3 Ensure that a Client CA File is Configured (Manual)
+
+Now do the same for the requirements below.
+
+Rules:
+- Keep KDE names short and specific
+- Do not explain
+- Do not use markdown
+- Do not omit any requirement
+- Do not rewrite the requirement text
+- Every requirement must appear exactly once
+
+Requirements:
+- 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual)
+- 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+- 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual)
+- 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Manual)
+- 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+- 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- 3.2.3 Ensure that a Client CA File is Configured (Manual)
+- 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+- 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- 3.2.6 Ensure that the --protect-kernel-defaults argument is set to true (Automated)
+- 3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- 3.2.8 Ensure that the --hostname-override argument is not set (Manual)
+- 3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- 3.2.10 Ensure that the --rotate-certificates argument is not present or is set to true (Manual)
+- 3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- 3.3.1 Prefer using a container-optimized OS when possible (Manual)
+- 4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+- 4.1.2 Minimize access to secrets (Manual)
+- 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+- 4.1.4 Minimize access to create pods (Manual)
+- 4.1.5 Ensure that default service accounts are not actively used. (Manual)
+- 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- 4.1.7 Avoid use of system:masters group (Manual)
+- 4.2.1 Minimize the admission of privileged containers (Automated)
+- 4.2.2 Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- 4.2.4 Minimize the admission of containers wishing to share the host network namespace (Automated)
+- 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- 4.2.6 Minimize the admission of root containers (Automated)
+- 4.2.7 Minimize the admission of containers with added capabilities (Manual)
+- 4.2.8 Minimize the admission of containers with capabilities assigned (Automated)
+- 4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+- 4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+- 4.4.2 Consider external secret storage (Manual)
+- 4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+- 4.6.2 Apply Security Context to Your Pods and Containers (Manual)
+- 5.1.2 Minimize user access to Amazon ECR (Manual)
+- 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+- 5.1.4 Minimize Container Registries to only those approved (Manual)
+- 5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+- 5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+- 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+- 5.6.1 Consider Fargate for running untrusted workloads (Manual)
+*Prompt Type*
+few-shot
+*LLM Output*
+
+- 5.7.1 Implement a robust logging and monitoring strategy (Manual)
+- 5.8.1 Automate the creation of security policies (Manual)
+- 5.9.1 Ensure that all resources are properly secured (Manual)
+- 5.10.1 Implement a comprehensive audit trail (Manual)
+- 5.11.1 Monitor the system for suspicious activity (Manual)
+- 5.12.1 Automate the remediation of security vulnerabilities (Manual)
+- 5.13.1 Implement a zero-trust security model (Manual)
+- 5.14.1 Automate the deployment of security patches (Manual)
+- 5.15.1 Automate the scaling of security policies (Manual)
+- 5.16.1 Automate the creation of security policies (Manual)
+- 5.17.1 Automate the creation of security policies (Manual)
+- 5.18.1 Automate the creation of security policies (Manual)
+- 5.19.1 Automate the creation of security policies (Manual)
+- 5.20.1 Automate the creation of security policies (Manual)
+- 5.21.1 Automate the creation of security policies (Manual)
+- 5.22.1 Automate the creation of security policies (Manual)
+- 5.23.1 Automate the creation of security policies (Manual)
+- 5.24.1 Automate the creation of security policies (Manual)
+- 5.25.1 Automate the creation of security policies (Manual)
+- 5.26.1 Automate the creation of security policies (Manual)
+- 5.27.1 Automate the creation of security policies (Manual)
+- 5.28
+
+================================================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+*Prompt Used*
+You are helping group security benchmark requirements into key data elements.
+
+Example:
+KDE: audit logs || REQ: 2.1.1 Enable audit Logs (Manual)
+KDE: read-only-port || REQ: 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+KDE: client ca file || REQ: 3.2.3 Ensure that a Client CA File is Configured (Manual)
+
+Now do the same for the requirements below.
+
+Rules:
+- Keep KDE names short and specific
+- Do not explain
+- Do not use markdown
+- Do not omit any requirement
+- Do not rewrite the requirement text
+- Every requirement must appear exactly once
+
+Requirements:
+- 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual)
+- 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+- 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual)
+- 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Manual)
+- 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+- 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- 3.2.3 Ensure that a Client CA File is Configured (Manual)
+- 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+- 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- 3.2.6 Ensure that the --protect-kernel-defaults argument is set to true (Automated)
+- 3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- 3.2.8 Ensure that the --hostname-override argument is not set (Manual)
+- 3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- 3.2.10 Ensure that the --rotate-certificates argument is not present or is set to true (Manual)
+- 3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- 3.3.1 Prefer using a container-optimized OS when possible (Manual)
+- 4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+- 4.1.2 Minimize access to secrets (Manual)
+- 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+- 4.1.4 Minimize access to create pods (Manual)
+- 4.1.5 Ensure that default service accounts are not actively used. (Manual)
+- 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- 4.1.7 Avoid use of system:masters group (Manual)
+- 4.2.1 Minimize the admission of privileged containers (Automated)
+- 4.2.2 Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- 4.2.4 Minimize the admission of containers wishing to share the host network namespace (Automated)
+- 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- 4.2.6 Minimize the admission of root containers (Automated)
+- 4.2.7 Minimize the admission of containers with added capabilities (Manual)
+- 4.2.8 Minimize the admission of containers with capabilities assigned (Automated)
+- 4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+- 4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+- 4.4.2 Consider external secret storage (Manual)
+- 4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+- 4.6.2 Apply Security Context to Your Pods and Containers (Manual)
+- 5.1.2 Minimize user access to Amazon ECR (Manual)
+- 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+- 5.1.4 Minimize Container Registries to only those approved (Manual)
+- 5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+- 5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+- 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+- 5.6.1 Consider Fargate for running untrusted workloads (Manual)
+*Prompt Type*
+few-shot
+*LLM Output*
+
+- 5.7.1 Implement a robust logging and monitoring strategy (Manual)
+- 5.8.1 Automate the creation of security policies (Manual)
+- 5.9.1 Ensure that all resources are properly secured (Manual)
+- 5.10.1 Implement a comprehensive audit trail (Manual)
+- 5.11.1 Monitor the system for suspicious activity (Manual)
+- 5.12.1 Automate the remediation of security vulnerabilities (Manual)
+- 5.13.1 Implement a zero-trust security model (Manual)
+- 5.14.1 Automate the deployment of security patches (Manual)
+- 5.15.1 Automate the scaling of security policies (Manual)
+- 5.16.1 Automate the creation of security policies (Manual)
+- 5.17.1 Automate the creation of security policies (Manual)
+- 5.18.1 Automate the creation of security policies (Manual)
+- 5.19.1 Automate the creation of security policies (Manual)
+- 5.20.1 Automate the creation of security policies (Manual)
+- 5.21.1 Automate the creation of security policies (Manual)
+- 5.22.1 Automate the creation of security policies (Manual)
+- 5.23.1 Automate the creation of security policies (Manual)
+- 5.24.1 Automate the creation of security policies (Manual)
+- 5.25.1 Automate the creation of security policies (Manual)
+- 5.26.1 Automate the creation of security policies (Manual)
+- 5.27.1 Automate the creation of security policies (Manual)
+- 5.28
+
+================================================================================
+
+*LLM Name*
+google/gemma-3-1b-it
+*Prompt Used*
+You are helping group security benchmark requirements into key data elements.
+
+Example:
+KDE: audit logs || REQ: 2.1.1 Enable audit Logs (Manual)
+KDE: read-only-port || REQ: 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+KDE: client ca file || REQ: 3.2.3 Ensure that a Client CA File is Configured (Manual)
+
+Now do the same for the requirements below.
+
+Rules:
+- Keep KDE names short and specific
+- Do not explain
+- Do not use markdown
+- Do not omit any requirement
+- Do not rewrite the requirement text
+- Every requirement must appear exactly once
+
+Requirements:
+- 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive (Manual)
+- 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Manual)
+- 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or more restrictive (Manual)
+- 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root (Manual)
+- 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+- 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated)
+- 3.2.3 Ensure that a Client CA File is Configured (Manual)
+- 3.2.4 Ensure that the --read-only-port is disabled (Manual)
+- 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Automated)
+- 3.2.6 Ensure that the --protect-kernel-defaults argument is set to true (Automated)
+- 3.2.7 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+- 3.2.8 Ensure that the --hostname-override argument is not set (Manual)
+- 3.2.9 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures appropriate event capture (Automated)
+- 3.2.10 Ensure that the --rotate-certificates argument is not present or is set to true (Manual)
+- 3.2.11 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+- 3.3.1 Prefer using a container-optimized OS when possible (Manual)
+- 4.1.1 Ensure that the cluster-admin role is only used where required (Manual)
+- 4.1.2 Minimize access to secrets (Manual)
+- 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Manual)
+- 4.1.4 Minimize access to create pods (Manual)
+- 4.1.5 Ensure that default service accounts are not actively used. (Manual)
+- 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Manual)
+- 4.1.7 Avoid use of system:masters group (Manual)
+- 4.2.1 Minimize the admission of privileged containers (Automated)
+- 4.2.2 Minimize the admission of containers wishing to share the host process ID namespace (Automated)
+- 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace (Automated)
+- 4.2.4 Minimize the admission of containers wishing to share the host network namespace (Automated)
+- 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+- 4.2.6 Minimize the admission of root containers (Automated)
+- 4.2.7 Minimize the admission of containers with added capabilities (Manual)
+- 4.2.8 Minimize the admission of containers with capabilities assigned (Automated)
+- 4.3.2 Ensure that all Namespaces have Network Policies defined (Manual)
+- 4.4.1 Prefer using secrets as files over secrets as environment variables (Manual)
+- 4.4.2 Consider external secret storage (Manual)
+- 4.6.1 Create administrative boundaries between resources using namespaces (Manual)
+- 4.6.2 Apply Security Context to Your Pods and Containers (Manual)
+- 5.1.2 Minimize user access to Amazon ECR (Manual)
+- 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+- 5.1.4 Minimize Container Registries to only those approved (Manual)
+- 5.2.1 Prefer using dedicated EKS Service Accounts (Manual)
+- 5.4.1 Restrict Access to the Control Plane Endpoint (Manual)
+- 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+- 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes (Manual)
+- 5.6.1 Consider Fargate for running untrusted workloads (Manual)
+*Prompt Type*
+few-shot
+*LLM Output*
+
+- 5.7.1 Implement a robust logging and monitoring strategy (Manual)
+- 5.8.1 Automate the creation of security policies (Manual)
+- 5.9.1 Ensure that all resources are properly secured (Manual)
+- 5.10.1 Implement a comprehensive audit trail (Manual)
+- 5.11.1 Monitor the system for suspicious activity (Manual)
+- 5.12.1 Automate the remediation of security vulnerabilities (Manual)
+- 5.13.1 Implement a zero-trust security model (Manual)
+- 5.14.1 Automate the deployment of security patches (Manual)
+- 5.15.1 Automate the scaling of security policies (Manual)
+- 5.16.1 Automate the creation of security policies (Manual)
+- 5.17.1 Automate the creation of security policies (Manual)
+- 5.18.1 Automate the creation of security policies (Manual)
+- 5.19.1 Automate the creation of security policies (Manual)
+- 5.20.1 Automate the creation of security policies (Manual)
+- 5.21.1 Automate the creation of security policies (Manual)
+- 5.22.1 Automate the creation of security policies (Manual)
+- 5.23.1 Automate the creation of security policies (Manual)
+- 5.24.1 Automate the creation of security policies (Manual)
+- 5.25.1 Automate the creation of security policies (Manual)
+- 5.26.1 Automate the creation of security policies (Manual)
+- 5.27.1 Automate the creation of security policies (Manual)
+- 5.28
+
+================================================================================
+

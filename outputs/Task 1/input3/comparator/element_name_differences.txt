@@ -1,0 +1,9 @@
+added capabilities,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+capabilities assigned,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+container optimized os,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+fargate,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+hostname override,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+protect kernel defaults,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+root containers,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+security context,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml
+system masters group,PRESENT-IN-cis-r1-kdes.yaml,ABSENT-IN-cis-r3-kdes.yaml

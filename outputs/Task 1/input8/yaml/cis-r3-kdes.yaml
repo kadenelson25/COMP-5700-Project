@@ -1,0 +1,139 @@
+element1:
+  name: kubeconfig file
+  requirements:
+  - 3.1.1 Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+    (Automated)
+  - 3.1.2 Ensure that the kubelet kubeconfig file ownership is set to root:root (Automated)
+element2:
+  name: kubelet configuration file
+  requirements:
+  - 3.1.3 Ensure that the kubelet configuration file has permissions set to 644 or
+    more restrictive (Automated)
+  - 3.1.4 Ensure that the kubelet configuration file ownership is set to root:root
+    (Automated)
+element3:
+  name: anonymous auth
+  requirements:
+  - 3.2.1 Ensure that the Anonymous Auth is Not Enabled (Automated)
+element4:
+  name: authorization mode
+  requirements:
+  - 3.2.2 Ensure that the --authorization-mode argument is not set to AlwaysAllow
+    (Automated)
+element5:
+  name: client ca file
+  requirements:
+  - 3.2.3 Ensure that a Client CA File is Configured (Automated)
+element6:
+  name: read-only-port
+  requirements:
+  - 3.2.4 Ensure that the --read-only-port is disabled (Automated)
+element7:
+  name: streaming connection idle timeout
+  requirements:
+  - 3.2.5 Ensure that the --streaming-connection-idle-timeout argument is not set
+    to 0 (Automated)
+element8:
+  name: iptables util chains
+  requirements:
+  - 3.2.6 Ensure that the --make-iptables-util-chains argument is set to true (Automated)
+element9:
+  name: event record qps
+  requirements:
+  - 3.2.7 Ensure that the --eventRecordQPS argument is set to 0 or a level which ensures
+    appropriate event capture (Automated)
+element10:
+  name: rotate certificates
+  requirements:
+  - 3.2.8 Ensure that the --rotate-certificates argument is not present or is set
+    to true (Automated)
+element11:
+  name: rotate kubelet server certificate
+  requirements:
+  - 3.2.9 Ensure that the RotateKubeletServerCertificate argument is set to true (Automated)
+element12:
+  name: cluster-admin role
+  requirements:
+  - 4.1.1 Ensure that the cluster-admin role is only used where required (Automated)
+element13:
+  name: secrets
+  requirements:
+  - 4.1.2 Minimize access to secrets (Automated)
+  - 4.4.1 Prefer using secrets as files over secrets as environment variables (Automated)
+element14:
+  name: roles and clusterroles
+  requirements:
+  - 4.1.3 Minimize wildcard use in Roles and ClusterRoles (Automated)
+element15:
+  name: create pods
+  requirements:
+  - 4.1.4 Minimize access to create pods (Automated)
+element16:
+  name: default service accounts
+  requirements:
+  - 4.1.5 Ensure that default service accounts are not actively used. (Automated)
+element17:
+  name: service account tokens
+  requirements:
+  - 4.1.6 Ensure that Service Account Tokens are only mounted where necessary (Automated)
+element18:
+  name: privileged containers
+  requirements:
+  - 4.2.1 Minimize the admission of privileged containers (Automated)
+element19:
+  name: host process id namespace
+  requirements:
+  - 4.2.2 Minimize the admission of containers wishing to share the host process ID
+    namespace (Automated)
+element20:
+  name: host ipc namespace
+  requirements:
+  - 4.2.3 Minimize the admission of containers wishing to share the host IPC namespace
+    (Automated)
+element21:
+  name: host network namespace
+  requirements:
+  - 4.2.4 Minimize the admission of containers wishing to share the host network namespace
+    (Automated)
+element22:
+  name: allowprivilegeescalation
+  requirements:
+  - 4.2.5 Minimize the admission of containers with allowPrivilegeEscalation (Automated)
+element23:
+  name: network policies
+  requirements:
+  - 4.3.2 Ensure that all Namespaces have Network Policies defined (Automated)
+element24:
+  name: external secret storage
+  requirements:
+  - 4.4.2 Consider external secret storage (Manual)
+element25:
+  name: namespaces
+  requirements:
+  - 4.5.1 Create administrative boundaries between resources using namespaces (Manual)
+element26:
+  name: amazon ecr access
+  requirements:
+  - 5.1.2 Minimize user access to Amazon ECR (Manual)
+  - 5.1.3 Minimize cluster access to read-only for Amazon ECR (Manual)
+element27:
+  name: container registries
+  requirements:
+  - 5.1.4 Minimize Container Registries to only those approved (Manual)
+element28:
+  name: dedicated eks service accounts
+  requirements:
+  - 5.2.1 Prefer using dedicated EKS Service Accounts (Automated)
+element29:
+  name: control plane endpoint
+  requirements:
+  - 5.4.1 Restrict Access to the Control Plane Endpoint (Automated)
+element30:
+  name: encrypt traffic to https
+  requirements:
+  - 5.4.5 Encrypt traffic to HTTPS load balancers with TLS certificates (Manual)
+element31:
+  name: iam authenticator
+  requirements:
+  - 5.5.1 Manage Kubernetes RBAC users with AWS IAM Authenticator for Kubernetes or
+    Upgrade to AWS CLI v1.16.156 or greater (Manual)
